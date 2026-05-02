@@ -31,19 +31,19 @@ public class BookingServlet extends HttpServlet
 
         Session session = sf.openSession();
 
-        Transaction tx = session.beginTransaction();
+        Transaction tx = session.beginTransaction()	;
 
         // Insert Records
 
-        Booking b1 = new Booking(101,"Rahul",
+        Booking b1 = new Booking(101,"Abdul",
                 "2026-05-02","Confirmed",
                 "Hyderabad",5000);
 
-        Booking b2 = new Booking(102,"Kiran",
+        Booking b2 = new Booking(102,"Aiza",
                 "2026-05-03","Pending",
                 "Vijayawada",3500);
 
-        Booking b3 = new Booking(103,"Sneha",
+        Booking b3 = new Booking(103,"Karim",
                 "2026-05-04","Cancelled",
                 "Chennai",4200);
 
