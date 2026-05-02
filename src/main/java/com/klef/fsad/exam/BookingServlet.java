@@ -33,8 +33,7 @@ public class BookingServlet extends HttpServlet
 
         Transaction tx = session.beginTransaction()	;
 
-        // Insert Records
-
+       
         Booking b1 = new Booking(101,"Abdul",
                 "2026-05-02","Confirmed",
                 "Hyderabad",5000);
@@ -53,7 +52,7 @@ public class BookingServlet extends HttpServlet
 
         tx.commit();
 
-        // HQL Query
+       
 
         Query q = session.createQuery("from Booking");
 
